@@ -33,7 +33,7 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && curl https:
 RUN apt-get update && apt-get install -y apt-transport-https
 RUN apt-get install unzip -y && rm -rf /var/lib/apt/lists/*
 RUN apt-get update
-RUN ACCEPT_EULA=Y apt-get install -y msodbcsql17 mssql-tools 
+#RUN ACCEPT_EULA=Y apt-get install -y msodbcsql17 mssql-tools 
 RUN apt-get install -y -f python3-dev unixodbc-dev
 RUN pip install --upgrade pip
 RUN mkdir /openimis-be
